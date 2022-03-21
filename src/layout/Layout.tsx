@@ -10,7 +10,11 @@ export default (): React.ReactElement | null => {
   const { isLogin, isLoading } = useContext(AppContext)
 
   return (
-    <Layout>
+    <Layout
+      style={{
+        height: '100%',
+      }}
+    >
       {isLogin ? (
         <LoadingOverlay active={isLoading} spinner>
           <Layout>
