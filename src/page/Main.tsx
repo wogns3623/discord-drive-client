@@ -1,12 +1,6 @@
-import React from 'react'
-
-import {
-  message,
-  Upload,
-  UploadProps,
-} from 'antd'
-
 import { InboxOutlined } from '@ant-design/icons'
+import { message, Upload, UploadProps } from 'antd'
+import React from 'react'
 
 const { Dragger } = Upload
 
@@ -29,6 +23,7 @@ const props: Partial<UploadProps> = {
     console.log('Dropped files', e.dataTransfer.files)
   },
 }
+
 export function Main(): React.ReactElement {
   // const { isLoading } = useContext(globalContext)
   // TODO: 메인디자인
